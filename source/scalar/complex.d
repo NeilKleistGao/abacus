@@ -96,7 +96,7 @@ struct Complex(size_t nbits)
         }
         else static if (op == "^^")
         {
-            ///TODO:
+            ///BAD
         }
 
         return this;
