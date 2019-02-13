@@ -122,12 +122,6 @@ struct Complex(size_t nbits)
         return res.opBinary!op(Complex(other, 0));
     }
 
-    ///overload binary operators +,-,*,/ and ^^ for complex on the left
-    @safe Complex opBinaryRight(string op)(Complex other) const
-    {
-        return other.opBinary!op(this);
-    }
-
     ///overload binary operators +,-,*,/ and ^^ for decimal on the left
     @safe Complex opBinaryRight(string op)(Real other) const
     {
